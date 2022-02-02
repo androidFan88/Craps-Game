@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>text</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            width:100%;
+        }
+        #sidebar {
+            width:10%;
+            display: inline-block;
+            height:100;
+        }
+        #board {
+            width:75%;
+        }
+        #chip {
+                text-align: center;
+                
+        }
+        #chips {
+                width: 100%;
+                justify-content: center;
+                margin:auto;
+                border-radius: 25px;
+                background-color: rgb(90, 182, 71);
+                border: 2px solid red;
+                display: inline-block;
+                
+        }
+        .pic {
+                display: inline-block;
+                width: 100%;
+                height: auto;
+                margin:auto;
+            }
+            #num {
+                padding:5%;
+                padding-top: 1%;
+                width:100%;
+                border: 2px solid yellow;
+                border-radius: 15px;
+                background-color: rgb(90, 182, 71);
+                text-align: center;
+                vertical-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: yellow;
+                margin-bottom: 0%;
+            }
+            #bar {
+                width:100%;
+                border: 2px solid white;
+                border-radius: 15px;
+                background-color: rgb(90, 182, 71);
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: white;
+              
+            }
+            body {
+                background-color: rgb(90, 182, 71);
+            }
+    </style>
+
+    <div class="flex-container">
+
+        <div id="sidebar">
+
+            <div id="chips">
+
+                <div style="width: 100%; display: inline-block;">
+                <h2 id="chip">5$</h2> 
+                <img id="five"class="pic" src="RedChip.gif"/>
+                </div> 
+                
+                <h2 id="chip">10$</h2> 
+                <div style="width: 100%; display: inline-block;">
+                    <img id="ten" class="pic" src="greenChip.gif"/>
+                </div>  
+                <h2 id="chip">25$</h2> 
+                <div style="width: 100%; display: inline-block;">
+                    <img id="twentyFive" class="pic" src="blueChip.gif"/>
+                </div>  
+
+            </div>   
+
+        </div>
+
+
+        <div id="board" style="margin-left: 0.2%;">
+            <div style="display: flex; width:100%; height: 30%; ">
+                <div id="num" >4</div>
+                <div id="num" >5</div>
+                <div id="num" >6</div>
+                <div id="num" >8</div>
+                <div id="num" >9</div>
+                <div id="num" >10</div>
+            </div>
+
+            <div style=" border: 2px solid yellow;
+                border-radius: 15px; background-color:rgb(90, 182, 71); height: 30%; text-align: center; color: yellow; vertical-align: center;">
+                <div style=" height: 100%; text-align: center;">
+                    <h2 style="width: 100%; text-align: center;">COME</h2>
+                </div>
+            </div>
+
+            <div style="height : 10%" id="bar" id="dontPass">
+                <div style="display: flex;">
+                <h2 style="display: flex; text-align: center; margin:auto;">Dont pass Bar</h2>
+                </div>
+            </div>
+
+            <div style="height : 20%" id="bar" id="dontPass">
+                <div style="display: flex;">
+                <h2 style="display: flex; text-align: center; margin:auto;">Pass Bar</h2>
+                </div>
+            </div>
+
+            <div id="bar" id="dontPass">
+                <div style="display: flex;">
+                <h2 style="display: flex; text-align: center; margin:auto;">Fire Bet</h2>
+                </div>
+            </div>
+
+        </div>
+
+
+        
+            <button id="btn" type="button" class="btn btn-primary">Roll the Dice!</button>
+        
+
+
+    </div>
+</body>
+</html>
